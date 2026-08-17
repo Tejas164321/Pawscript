@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+
+:root {
+  --white: #FFFFFF;
+  --paper: #FCFBF5;
+  --ink: #15150E;
+  --ink-soft: #57574B;
+  --ink-faint: #8C8C7C;
+  --yellow: #FFD100;
+  --yellow-deep: #E0B400;
+  --yellow-pale: #FFF6CC;
+  --line: #15150E;
+  --line-soft: #E7E3D2;
+
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--white);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+@keyframes scanMove {
+  0%, 100% {
+    top: 2%;
+  }
+  50% {
+    top: 96%;
+  }
+}
+
+.animate-scan {
+  animation: scanMove 1.5s ease-in-out infinite;
+}
+
+.brutalist-card {
+  background: var(--yellow);
+  border: 2.5px solid var(--line);
+  border-radius: 22px;
+  box-shadow: 8px 8px 0 var(--line);
+}
+
+.brutalist-subcard {
+  background: var(--white);
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 4px 4px 0 var(--line);
+}

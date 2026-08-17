@@ -1,0 +1,6 @@
+{
+  "name": "Dear Hooman",
+  "description": "Pawscript — An AI that speaks dog. Upload a photo of your pup and receive a heartfelt letter in their true voice.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
